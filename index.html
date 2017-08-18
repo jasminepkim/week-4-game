@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Such Game. Such Wow.</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Added link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Such Doge. Such Game. Such wow.</h1>
+
+    <div id="instructions">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four doges below. By clicking on a doge you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the random number, and you lose the game if your total score goes
+            above the random number.</p>
+        <p>The value of each doge is hidden from you until you click on it.</p>
+        <p>Each time when the doge starts, the game will change the values of each crystal.</p>
+    </div>
+
+    <div class="container">
+
+        <div id="randomNumber">
+            <h2><span>Number to Guess: </span></h2>
+        </div>
+
+        <div id="scoreCounter">
+            <h4><span>You !</span></h4>
+            <h4>Wins:<span id="wins"></span></h4>
+            <h4>Losses:<span id="losses"></span></h4>
+        </div>
+
+        <div id="doges">
+            <img class id="doge1" src="assets/images/doge1.gif" alt="red-crystal">
+            <img class id="doge2" src="assets/images/doge2.gif" alt="white-crystal">
+            <img class id="doge3" src="assets/images/doge3.gif" alt="green-crystal">
+            <img class id="doge4" src="assets/images/doge4.gif" alt="blue-crystal">
+        </div>
+
+        <div id="userScoreText">
+            <h3><span>Your total score is:</span></h3>
+        </div>
+
+        <div id="userNumber">
+            <h3><span>Your total score is:</span></h3>
+        </div>
+
+        <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
