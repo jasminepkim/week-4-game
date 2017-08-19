@@ -1,5 +1,5 @@
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: lightgray;
 }
 
 #doge1,
@@ -21,8 +21,9 @@ body {
     background-color: lightseagreen; 
     width: 250px;
     margin-bottom: 20px;
-    padding: 0px 50px 70px 0px;
+    padding: 0px 50px 90px 0px;
     float: left;
+    font-size: 30px;
 }
 
 #scoreCounter {
@@ -40,7 +41,7 @@ body {
 }
 
 #userScoreText {
-    background-color: rgba(9, 167, 97, 0.85);
+    background-color: #C0ECEC;
     margin-top: 15px;
     padding: 0px 150px 0px 0px;
     float: left;
@@ -48,7 +49,7 @@ body {
 }
 
 #userNumber {
-    background-color: rgba(9, 167, 97, 0.85);
+    background-color: #C0ECEC;
     margin-top: 12px;
     margin-bottom: 20px;
     padding: 0px 150px 125px 0px;
