@@ -1,60 +1,74 @@
 body {
-    background-color: lightgray;
-    font-family: "Helvetica", Arial, sans-serif;
+    background-image: url("../images/wallpaper.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
 }
 
 #doge1,
 #doge2,
 #doge3,
 #doge4 {
-    width: 125px;
+    width: 140px;
     border: 2px solid #ddd;
 }
 
 #instructions {
     background-color: white;
-    width: 500px;
+    width: 550px;
     margin-bottom: 20px;
-    padding: 5px 0px 30px 0px;
+    padding: 5px 2px 30px 2px;
+    font-size: 20px;
 }
 
 #randomNumber {
-    background-color: lightseagreen; 
+    background-color: #54F5EC; 
     width: 250px;
     margin-bottom: 20px;
     padding: 0px 50px 90px 0px;
     float: left;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 #scoreCounter {
     background-color: lightsalmon;
-    width: 75px;
-    margin-bottom: 20px;
-    padding: 0px 60px 0px 0px;
-    margin-left: 30px;
+    width: 140px;
+    margin-bottom: 15px;
+    /* padding: 0px 150px 0px 0px; */
+    /* margin-left: 30px; */
+    margin: 0px 20px 20px 20px;
+    text-align: center;
     float: left;
+    font-size: 18px;
 }
 
-#doges {
+.doges {
     float: left;
     clear: left;
 }
 
 #userScoreText {
-    background-color: #C0ECEC;
+    background-color: #EDEDA2;
     margin-top: 15px;
-    padding: 0px 150px 0px 0px;
+    padding: 0px 50px 0px 0px;
     float: left;
     clear: left;
+    font-size: 16px;
 }
 
 #userCounter {
-    background-color: #C0ECEC;
+    background-color: #EDEDA2;
     margin-top: 12px;
     margin-bottom: 20px;
-    padding: 0px 150px 125px 0px;
-    font-size: 30px;
+    padding: 0px 150px 100px 0px;
+    width: 150px;
+    font-size: 40px;
     float: left;
     clear: left;
 }
