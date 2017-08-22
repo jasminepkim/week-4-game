@@ -18,16 +18,17 @@
         <p>You win the game by matching your total score to the random number, and you lose the game if your total score goes
             above the random number.</p>
         <p>The value of each doge is hidden from you until you click on it.</p>
-        <p>Each time when the doge starts, the game will change the values of each crystal.</p>
+        <p>Each time when the doge starts, the game will change the values of each doge.</p>
     </div>
 
     <div class="container">
 
-        <!-- this is the computer generating a random number -->
-        <div id="randomNumber"> 
+        <!-- This is the computer generating a random number -->
+        <div id="randomNumber">
             <h2><span></span></h2>
         </div>
 
+        <!-- Score counter to display user's wins, losses, and an alert stating whether they won or lost -->
         <div id="scoreCounter">
             <h4><span id="alert"></span></h4>
             <h4>Wins: <span id="wins"></span></h4>
@@ -35,21 +36,25 @@
         </div>
 
         <div class="doges">
-            <img class id="doge1" src="assets/images/doge1.gif" alt="red-crystal">
-            <img class id="doge2" src="assets/images/doge2.gif" alt="white-crystal">
-            <img class id="doge3" src="assets/images/doge3.gif" alt="green-crystal">
-            <img class id="doge4" src="assets/images/doge4.gif" alt="blue-crystal">
+            <img class id="doge1" src="assets/images/doge1.gif" alt="galatical">
+            <img class id="doge2" src="assets/images/doge2.gif" alt="pizza">
+            <img class id="doge3" src="assets/images/doge3.gif" alt="rainbow">
+            <img class id="doge4" src="assets/images/doge4.gif" alt="pow-wow">
         </div>
 
+        <!-- This is text only -->
         <div id="userScoreText">
             <h3><span>Your total score is:</span></h3>
         </div>
 
+        <!-- The user's guess -->
         <div id="userCounter">
             <h3><span></span></h3>
         </div>
 
         <script src="assets/javascript/game.js"></script>
+
+    </div>
 
 </body>
 

@@ -1,34 +1,20 @@
-$(document).ready(function() {
-
 // Variables to create number counters
 var wins = 0;
 var losses = 0;
 var userCounter = 0;
 var randomNumberComp = 0;
 var dogePoints = {};
-reset();
 
 // FUNCTIONS
 
-// Function for computer's random number generator from 19-120
-function getRandomIntComp() {
-    return Math.floor(Math.random() * (120 - 19)) + 19;
-}
-
-// Function for user's random number generator from 1-12
-function getRandomIntUser() {
-    return Math.floor(Math.random() * (12 - 1)) + 1;
-}
-
-// Function to reset the number counters
 function reset() {
     userCounter = 0;
-    randomNumberComp = getRandomIntComp();
+    randomNumberComp = Math.floor(Math.random() * (120 - 19)) + 19;
     dogePoints = {
-        "doge1": getRandomIntUser(),
-        "doge2": getRandomIntUser(),
-        "doge3": getRandomIntUser(),
-        "doge4": getRandomIntUser(),
+        "doge1": Math.floor(Math.random() * (12 - 1)) + 1,
+        "doge2": Math.floor(Math.random() * (12 - 1)) + 1,
+        "doge3": Math.floor(Math.random() * (12 - 1)) + 1,
+        "doge4": Math.floor(Math.random() * (12 - 1)) + 1,
     }
     $("#userCounter").html(userCounter);
     $("#randomNumber").html(randomNumberComp);  // do not try to pass a function through!
@@ -52,37 +38,31 @@ function play() {
 }
 
 // DOGE BUTTONS
+$(document).ready(function() {
+
+    reset();
 
 $("#doge1").on("click", function () {
-    console.log("Galatical doge");
-    userCounter += dogePoints.doge1;
-    console.log(userCounter);
+    userCounter += dogePoints.doge1; // from every click, this value gets added to the global variable "userCounter"
     $("#userCounter").html(userCounter);
     play();
 });
 
 $("#doge2").on("click", function () {
-    console.log("Pizza doge");
-    $("#userCounter").html(userCounter);
     userCounter += dogePoints.doge2;
-    console.log(userCounter);
     $("#userCounter").html(userCounter);
     play();
 });
 
 $("#doge3").on("click", function () {
-    console.log("Rainbow doge");
     userCounter += dogePoints.doge3;
-    console.log(userCounter);
     $("#userCounter").html(userCounter);
     play();
 });
 
 $("#doge4").on("click", function () {
-    console.log("Pow-wow doge");
     userCounter += dogePoints.doge4;
-    console.log(userCounter);
     $("#userCounter").html(userCounter);
     play();
 });
-})
+});
